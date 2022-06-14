@@ -21,3 +21,11 @@ class Solution:
 class Solution(object):
     def sortedSquares(self, A):
         return sorted(x*x for x in A)
+    
+    
+#Initial Slow solution
+for i in range(len(nums)):
+            nums[i] = abs(nums[i]) ** 2
+        nums.sort()
+        
+        return nums
