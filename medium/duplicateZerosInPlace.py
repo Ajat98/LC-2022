@@ -39,3 +39,19 @@ class Solution:
                 arr[i + dupes] = arr[i]
                 
                 
+                
+#If not modifying in place, can use this approach
+ s = 0
+  d = 0
+
+  # Copy is performed until the destination array is full.
+  for s in range(N):
+    if source[s] == 0:
+      # Copy zero twice.
+      destination[d] = 0
+      d += 1
+      destination[d] = 0
+    else:
+      destination[d] = source[s]
+
+    d += 1
